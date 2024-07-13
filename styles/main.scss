@@ -13,6 +13,10 @@ body {
   color: $primary-font-color;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   width: 1181px;
   padding: 0 15px;
