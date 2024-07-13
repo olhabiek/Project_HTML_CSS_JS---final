@@ -1,0 +1,95 @@
+.howMeetupWorks {
+  padding-top: 64px;
+  h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.3;
+    @media (max-width: 992px) {
+      font-size: 24px;
+    }
+    @media (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
+}
+
+.howMeetupWorks__discoverEventsContainer {
+  display: flex;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.howMeetupWorks__discoverLink {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #97cad114;
+  text-decoration: none;
+  color: $primary-font-color;
+  padding: 32px 130px 24px 24px;
+  &:hover {
+    background-color: #69adb931;
+    transition: all 1s;
+  }
+}
+
+.howMeetupWorks__discoverEvents {
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-top: 16px;
+  }
+}
+
+.howMeetupWorks__search {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: $primary-color;
+  padding-top: 16px;
+}
+
+@media (max-width: 992px) {
+  .howMeetupWorks__discoverLink {
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .howMeetupWorks__discoverEventsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .howMeetupWorks {
+    padding-top: 43px;
+  }
+  .howMeetupWorks__discoverEventsContainer {
+    gap: 12px;
+  }
+  .howMeetupWorks__discoverLink {
+    justify-content: flex-start;
+  }
+  .howMeetupWorks__discoverEvents {
+    h3 {
+      font-size: 12px;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+  .howMeetupWorks__search {
+    font-size: 10px;
+  }
+}

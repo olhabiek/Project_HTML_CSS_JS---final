@@ -1,0 +1,128 @@
+.friendshipOnMeetup {
+  padding-top: 64px;
+  h2 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.3;
+    @media (max-width: 992px) {
+      font-size: 24px;
+    }
+    @media (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
+}
+
+.friendshipOnMeetup__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $secondary-font-color;
+  padding-top: 16px;
+  padding-right: 320px;
+}
+
+.friendshipOnMeetup__container {
+  padding-top: 28px;
+  display: flex;
+  gap: 32px;
+}
+
+.friendshipOnMeetup__article {
+  flex-basis: 0;
+  flex-grow: 1;
+  img {
+    width: 100%;
+    height: 191px;
+    &:hover {
+      transition: all 1s;
+      transform: scale(1.1);
+    }
+  }
+  h4 {
+    padding-top: 24px;
+    padding-right: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.55;
+    color: $primary-font-color;
+    text-decoration: none;
+  }
+  a {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    &:hover .friendshipOnMeetup__readMore {
+      text-decoration: underline;
+      text-decoration-color: $primary-color;
+    }
+  }
+}
+
+.friendshipOnMeetup__articleText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 12px;
+  color: $secondary-font-color;
+}
+
+.friendshipOnMeetup__readMore {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 12px;
+  color: $primary-color;
+}
+
+@media (max-width: 992px) {
+  .friendshipOnMeetup__article {
+    img {
+      width: 100%;
+      height: 90%;
+    }
+  }
+}
+
+.friendshipOnMeetup__articleText {
+  font-size: 15px;
+}
+
+.friendshipOnMeetup__text {
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .friendshipOnMeetup__text {
+    padding-right: 20px;
+  }
+  .friendshipOnMeetup__container {
+    flex-direction: column;
+    img {
+      height: 275px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .friendshipOnMeetup {
+    padding-top: 32px;
+  }
+  .friendshipOnMeetup__article {
+    h4 {
+      font-size: 16px;
+    }
+    img {
+      height: 80%;
+    }
+  }
+  .friendshipOnMeetup__articleText {
+    font-size: 12px;
+    padding-right: 50px;
+  }
+  .friendshipOnMeetup__readMore {
+    font-size: 14px;
+  }
+}
