@@ -34,6 +34,13 @@
   width: 580px;
 }
 
+.hero__heroImg {
+  &:hover {
+    transition: all 1s;
+    transform: scale(1.2);
+  }
+}
+
 @media (max-width: 992px) {
   .hero {
     padding-top: 38px;

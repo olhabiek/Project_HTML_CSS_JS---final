@@ -96,6 +96,10 @@
   width: clamp(25px, 50%, 106px);
   left: 10px;
   top: 5px;
+  &:hover {
+    transition: all 1s;
+    transform: scale(1.2);
+  }
 }
 
 .eventsNear__activityKind {
