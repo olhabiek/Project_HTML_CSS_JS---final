@@ -2,4 +2,169 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 45px;
+}
+
+.header__logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__inputsForm {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header__inputsForm .header__input {
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+}
+.header__inputsForm .header__inputSearch {
+  border-radius: 8px 0 0 8px;
+  width: clamp(150px, 80%, 350px);
+  height: 42px;
+  border: 1px solid #d9d9d9;
+  padding: 13px 24px 13px 37px;
+  border-right: none;
+}
+.header__inputsForm .header__inputSearch:focus {
+  outline: none;
+  border: 1px solid #212121;
+}
+.header__inputsForm .header__inputText {
+  width: 254px;
+  height: 42px;
+  border: 1px solid #d9d9d9;
+  padding: 13px 9px 13px 17px;
+}
+.header__inputsForm .header__inputText:focus {
+  outline: none;
+  border: 1px solid #212121;
+}
+.header__inputsForm .header__searchButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background-color: #f65858;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.header__inputImg {
+  position: absolute;
+  left: 12px;
+}
+
+.header__authLangContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+.header__authLangContainer a {
+  display: none;
+}
+
+.header__loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+
+.header__langChange,
+.header__loginButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.header__langChange:hover,
+.header__loginButton:hover {
+  text-decoration: underline;
+}
+
+.header__signUpButton {
+  width: 83px;
+  height: 36px;
+  background-color: #00798a;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.header__signUpButton:hover {
+  background-color: rgba(0, 121, 138, 0.9);
+}
+
+@media (max-width: 1196px) {
+  header {
+    padding: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .header__inputText {
+    display: none;
+  }
+}
+@media (max-width: 772px) {
+  header {
+    flex-direction: column-reverse;
+  }
+  .header__logoContainer {
+    padding-top: 15px;
+    width: 100%;
+  }
+  .header__logoContainer a {
+    display: none;
+  }
+  .header__authLangContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__authLangContainer a {
+    display: block;
+  }
+  .header__inputsForm {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  header {
+    padding: 4px 7px;
+  }
+  .header__loginContainer {
+    gap: 10px;
+  }
+  .header__loginContainer .header__langChange,
+  .header__loginContainer .header__loginButton,
+  .header__loginContainer .header__signUpButton {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */

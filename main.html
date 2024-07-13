@@ -13,6 +13,46 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
+    <header>
+      <div class="header__logoContainer">
+        <a href="main.html"
+          ><img src="assets/icons/hero_logo.svg" alt="Meetup logo"
+        /></a>
+        <form class="header__inputsForm">
+          <img
+            class="header__inputImg"
+            src="assets/icons/search_input.svg"
+            alt="Search icon"
+          />
+          <input
+            class="header__inputSearch"
+            type="search"
+            placeholder="Search events"
+          />
+          <input
+            class="header__inputText"
+            type="text"
+            placeholder="Neighborhood, city or zip"
+            value="Mountain View, CA"
+          />
+          <button class="header__searchButton">
+            <img src="assets/icons/search.svg" alt="Search icon" />
+          </button>
+        </form>
+      </div>
+      <div class="header__authLangContainer">
+        <a href="main.html"
+          ><img src="assets/icons/hero_logo.svg" alt="Meetup logo"
+        /></a>
+        <div class="header__loginContainer">
+          <button class="header__langChange">
+            <img src="assets/icons/language.svg" alt="Language icon" />English
+          </button>
+          <button class="header__loginButton">Log in</button>
+          <button class="header__signUpButton">Sign up</button>
+        </div>
+      </div>
+    </header>
     <script src="main.js"></script>
   </body>
 </html>

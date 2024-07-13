@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+$primary-font-color: #212121;
+$secondary-font-color: #707070;
+$primary-color: #00798a;
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $primary-font-color;
+}
+
 @import "1-header";
 @import "2-hero";
 @import "3-events-near";
