@@ -19,6 +19,10 @@ ul {
   margin: 0 auto;
 }
 
+button:active {
+  transform: translateY(2px);
+}
+
 @media (max-width: 540px) {
   .container {
     width: 100%;
@@ -66,7 +70,7 @@ header {
   gap: 40px;
 }
 .header__logoContainer img:hover {
-  transition: all 1s;
+  transition: all 0.5s;
   transform: scale(1.2);
 }
 
@@ -254,7 +258,7 @@ header {
 }
 
 .hero__heroImg:hover {
-  transition: all 1s;
+  transition: all 0.5s;
   transform: scale(1.2);
 }
 
@@ -391,7 +395,7 @@ header {
   top: 5px;
 }
 .eventsNear-onlineEventImg:hover {
-  transition: all 1s;
+  transition: all 0.5s;
   transform: scale(1.2);
 }
 
@@ -635,7 +639,7 @@ header {
   gap: 100px;
 }
 .joinMeetup img:hover {
-  transition: all 1s;
+  transition: all 0.5s;
   transform: scale(1.2);
 }
 
@@ -777,7 +781,7 @@ header {
 }
 .exploreTopCategories ul li:hover {
   background-color: rgba(105, 173, 185, 0.1921568627);
-  transition: all 1s;
+  transition: all 0.5s;
   transform: scale(1.2);
 }
 .exploreTopCategories ul li .exploreTopCategories__linkContainer {
@@ -879,7 +883,7 @@ header {
   height: 100%;
 }
 .exploreTopCategories__citiesList img:hover {
-  transition: all 1s;
+  transition: all 0.5s;
   transform: scale(1.2);
 }
 .exploreTopCategories__citiesList a {
@@ -962,7 +966,7 @@ header {
 }
 .howMeetupWorks__discoverLink:hover {
   background-color: rgba(105, 173, 185, 0.1921568627);
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .howMeetupWorks__discoverEvents h3 {
@@ -1061,7 +1065,7 @@ header {
   height: 191px;
 }
 .friendshipOnMeetup__article img:hover {
-  transition: all 1s;
+  transition: all 0.5s;
   transform: scale(1.1);
 }
 .friendshipOnMeetup__article h4 {

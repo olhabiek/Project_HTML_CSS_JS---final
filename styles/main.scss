@@ -23,6 +23,10 @@ ul {
   margin: 0 auto;
 }
 
+button:active {
+  transform: translateY(2px);
+}
+
 @media (max-width: 540px) {
   .container {
     width: 100%;
