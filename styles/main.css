@@ -14,7 +14,7 @@ ul {
 }
 
 .container {
-  width: 1181px;
+  width: 1196px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -59,6 +59,8 @@ button:active {
   }
 }
 header {
+  max-width: 1512px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 20px 45px;
@@ -1149,6 +1151,8 @@ header {
   }
 }
 footer {
+  max-width: 1512px;
+  margin: 0 auto;
   margin-top: 54px;
   color: #c5c4c4;
   background-color: #212121;
@@ -1212,8 +1216,7 @@ footer {
 }
 .footer__navContainer .footer__nav a:hover {
   text-decoration: underline;
-  transition: all 0.5s;
-  transform: scale(1.1);
+  color: white;
 }
 
 .footer__social {
@@ -1270,6 +1273,7 @@ footer {
 }
 .footer__policy a:hover {
   text-decoration: underline;
+  color: white;
 }
 
 .footer-container {
