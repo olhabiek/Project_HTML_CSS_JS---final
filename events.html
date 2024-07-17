@@ -13,6 +13,217 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
+    <header>
+      <div class="header__logoContainer">
+        <a href="main.html"
+          ><img src="assets/icons/hero_logo.svg" alt="Meetup logo"
+        /></a>
+        <form class="header__inputsForm">
+          <img
+            class="header__inputImg"
+            src="assets/icons/search_input.svg"
+            alt="Search icon"
+          />
+          <input
+            class="header__inputSearch"
+            type="search"
+            placeholder="Search events"
+          />
+          <input
+            class="header__inputText"
+            type="text"
+            value="Mountain View, CA"
+          />
+          <button class="header__searchButton">
+            <img src="assets/icons/search.svg" alt="Search icon" />
+          </button>
+        </form>
+      </div>
+      <div class="header__authLangContainer">
+        <a href="./index.html"
+          ><img src="assets/icons/hero_logo.svg" alt="Meetup logo"
+        /></a>
+        <div class="header__loginContainer">
+          <button class="header__langChange">
+            <img src="assets/icons/language.svg" alt="Language icon" />English
+          </button>
+          <button class="header__loginButton">Log in</button>
+          <button class="header__signUpButton">Sign up</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="events">
+          <div class="events__eventsSearchContainer">
+            <h2>Events near New York, NY</h2>
+            <button class="events__eventsSearch">Events</button>
+            <div class="events__eventsSelectContainer">
+              <div class="events__customSelect">
+                <select name="event-type" id="event-type">
+                  <option value="any">Any Type</option>
+                  <option value="online">Online</option>
+                  <option value="offline">Offline</option>
+                </select>
+                <img
+                  class="events__selectArrow"
+                  src="assets/map/select_arrow.svg"
+                  alt="Select arrow icon"
+                />
+              </div>
+              <div class="events__customSelect">
+                <select name="event-distance" id="event-distance">
+                  <option value="any">Any Distance</option>
+                  <option value="5">5 km</option>
+                  <option value="10">10 km</option>
+                  <option value="15">15 km</option>
+                  <option value="25">25 km</option>
+                  <option value="50">50 km</option>
+                  <option value="75">75 km</option>
+                  <option value="100">100 km</option>
+                </select>
+                <img
+                  class="events__selectArrow"
+                  src="assets/map/select_arrow.svg"
+                  alt="Select arrow icon"
+                />
+              </div>
+              <div class="events__customSelect">
+                <select name="event-category" id="event-category">
+                  <option value="any">Any Category</option>
+                  <option value="Social Activities">Social Activities</option>
+                  <option value="Hobbies and Passions">
+                    Hobbies and Passions
+                  </option>
+                  <option value="Health and Wellbeing">
+                    Health and Wellbeing
+                  </option>
+                  <option value="Business">Business</option>
+                  <option value="Technology">Technology</option>
+                </select>
+                <img
+                  class="events__selectArrow"
+                  src="assets/map/select_arrow.svg"
+                  alt="Select arrow icon"
+                />
+              </div>
+            </div>
+            <div class="events__allEvents"></div>
+          </div>
+          <aside class="events__map">
+            <p>Find events near</p>
+            <h3>New York, NY</h3>
+            <div class="events__mapImageContainer">
+              <img
+                class="events__mapImage"
+                src="assets/map/blured_map.png"
+                alt="Map image"
+              />
+              <button class="events__mapButton">
+                <span class="events__mapButtonText">Browse in map</span
+                ><img
+                  src="assets/map/expand_map_Icon.svg"
+                  alt="Expand map icon"
+                />
+              </button>
+              <button class="events__mapCloseButton">
+                <img src="assets/map/button_close.svg" alt="Close icon" />
+              </button>
+            </div>
+          </aside>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer__createGroupContainer">
+            <p>Create your own Meetup group.</p>
+            <button>Get started</button>
+          </div>
+          <div class="footer__navContainer">
+            <nav class="footer__nav footer__navAccount">
+              <p>Your Account</p>
+              <a href="#">Sign up</a>
+              <a href="#">Login</a>
+              <a href="#">Help</a>
+              <a href="#">Become an Affiliate</a>
+            </nav>
+            <nav class="footer__nav footer__navDiscover">
+              <p>Discover</p>
+              <a href="#">Groups</a>
+              <a href="#">Calendar</a>
+              <a href="#">Topics</a>
+              <a href="#">Cities</a>
+              <a href="#">Online Events</a>
+              <a href="#">Local Guides</a>
+              <a href="#">Make Friends</a>
+            </nav>
+            <nav class="footer__nav footer__navMeetup">
+              <p>Meetup</p>
+              <a href="#">About</a>
+              <a href="#">Blog</a>
+              <a href="#">Meetup Pro</a>
+              <a href="#">Careers</a>
+              <a href="#">Apps</a>
+              <a href="#">Podcast</a>
+            </nav>
+          </div>
+          <div class="footer__social">
+            <div class="footer__socialContainer">
+              <p>Follow us</p>
+              <ul class="footer__socialList">
+                <li>
+                  <a href="#"
+                    ><img src="assets/icons/facebook.svg" alt="Facebook icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/icons/twitter.svg" alt="Twitter icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/icons/youtube.svg" alt="Youtube icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="assets/icons/instagramm.svg"
+                      alt="Instagramm icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="assets/icons/tik_tok.svg" alt="Tik-tok icon"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__mobileDownload">
+              <a href="#"
+                ><img src="assets/icons/google_play.svg" alt="Google play icon"
+              /></a>
+              <a href="#"
+                ><img src="assets/icons/appstore.svg" alt="Appstore icon"
+              /></a>
+            </div>
+          </div>
+          <div class="footer__policyContainer">
+            <p>© 2024 Meetup</p>
+            <ul class="footer__policy">
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Do Not Sell or Share My Personal Data</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
